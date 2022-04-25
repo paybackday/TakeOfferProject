@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Project.CORE.Dal.Concrete.EntityFramework
 {
-    public class EfEntityRepository<T> : IEntityRepository<T> where T : class, new()
+    public abstract class EfEntityRepository<T> : IEntityRepository<T> where T : class, new()
     {
         private readonly DbContext _context;
 

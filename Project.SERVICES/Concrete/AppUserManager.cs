@@ -9,5 +9,7 @@ namespace Project.SERVICES.Concrete
 {
     public class AppUserManager:IAppUserService
     {
+
+
     }
 }

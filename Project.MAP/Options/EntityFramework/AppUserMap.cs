@@ -13,7 +13,7 @@ namespace Project.MAP.Options.EntityFramework
         public override void Configure(EntityTypeBuilder<AppUser> builder)
         {
             base.Configure(builder);
-            builder.HasOne(au => au.Profile).WithOne(up => up.AppUser).HasForeignKey("AppUserID");
+            builder.HasOne(au => au.Profile).WithOne(up => up.AppUser).HasForeignKey<AppUserProfile>("AppUserID");
         }
     }
 }

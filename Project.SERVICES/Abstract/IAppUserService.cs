@@ -1,4 +1,5 @@
-﻿using Project.CORE.Utilities.Abstract;
+﻿using Project.CORE.DtoS;
+using Project.CORE.Utilities.Abstract;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,6 @@ namespace Project.SERVICES.Abstract
 {
     public interface IAppUserService
     {
-        //Task<IDataResult<AppUserDto>> Get(int appUserId);
+        Task<IDataResult<AppUserDto>> Get(int appUserId);
     }
 }
